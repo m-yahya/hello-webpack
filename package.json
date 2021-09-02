@@ -25,5 +25,9 @@
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.0"
+  },
+  "dependencies": {
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "web3": "^1.5.2"
   }
 }
