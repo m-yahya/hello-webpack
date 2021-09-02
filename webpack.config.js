@@ -1,9 +1,11 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  devtool: "inline-source-map",
 
   entry: {
     main: path.resolve(__dirname, "./src/main.js"),
@@ -17,11 +19,12 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Webpack Output",
       template: path.resolve(__dirname, "index.html"),
     }),
 
     new CleanWebpackPlugin(),
+
+    new NodePolyfillPlugin(),
   ],
 
   devtool: "inline-source-map",
