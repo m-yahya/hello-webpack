@@ -14,7 +14,7 @@
     "html",
     "web3"
   ],
-  "author": "Saikesh Erramshetty @ OLI System",
+  "author": "Saikesh Erramshetty & Muhammad Yahya @ OLI System",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.15.0",
